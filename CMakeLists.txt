@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
-project(first_ubuntu_prrject C)
+project(first_ubuntu_prrject)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(first_ubuntu_prrject client.c serverer.c)
+add_executable(client client.cpp)
+add_executable(server server.cpp)
